@@ -1,6 +1,6 @@
-import React from 'react';
 import AcmeLogo from '../ui/acme-logo';
 import LoginForm from '../ui/login-form';
+import SignIn from '../ui/sign-in';
 
 export default function LoginPage() {
   return (
@@ -12,6 +12,7 @@ export default function LoginPage() {
           </div>
         </div>
         <LoginForm />
+        <SignIn />
       </div>
     </main>
   );
