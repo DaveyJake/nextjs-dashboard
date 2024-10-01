@@ -5,6 +5,7 @@ import {
   KeyIcon
 } from '@heroicons/react/24/outline';
 import { Button } from './button';
+import SignIn from './sign-in';
 
 export default function LoginForm() {
   return (
@@ -57,6 +58,7 @@ export default function LoginForm() {
         <Button className="mt-4 w-full">
           Log in <ArrowRightIcon className="ml-auto h-5 w-5 text-gray-50" />
         </Button>
+        <SignIn />
         <div className="flex h-8 items-end space-x-1">
           {/* Add form errors here */}
         </div>

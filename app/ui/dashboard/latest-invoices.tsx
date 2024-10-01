@@ -18,8 +18,7 @@ export default async function LatestInvoices() {
         <div className="bg-white px-6">
           {latestInvoices.map((invoice, i) => {
             return (
-              <div
-                key={invoice.id}
+              <div key={invoice.id}
                 className={clsx(
                   'flex flex-row items-center justify-between py-4',
                   {
@@ -44,9 +43,7 @@ export default async function LatestInvoices() {
                     </p>
                   </div>
                 </div>
-                <p
-                  className={`${lusitana.className} truncate text-sm font-medium md:text-base`}
-                >
+                <p className={`${lusitana.className} truncate text-sm font-medium md:text-base`}>
                   {invoice.amount}
                 </p>
               </div>

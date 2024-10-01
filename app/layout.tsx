@@ -2,9 +2,7 @@ import { inter } from '@app/ui/fonts';
 import '@app/ui/global.css';
 import React from 'react';
 
-type RootLayoutArgs = {
-  children: React.ReactNode;
-};
+type RootLayoutArgs = { children: React.ReactNode; };
 
 export default function RootLayout({ children }: RootLayoutArgs ) {
   return (

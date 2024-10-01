@@ -4,14 +4,13 @@ import { DeleteInvoice, UpdateInvoice } from '@app/ui/invoices/buttons';
 import InvoiceStatus from '@app/ui/invoices/status';
 import Image from 'next/image';
 
-export default async function InvoicesTable({
-  query,
-  currentPage,
-}: {
+interface InvoicesTableArgs {
   query: string;
   currentPage: number;
-}) {
-  const invoices = await fetchFilteredInvoices(query, currentPage);
+}
+
+export default async function InvoicesTable({ query, currentPage }: InvoicesTableArgs ) {
+  const invoices = await fetchFilteredInvoices( query, currentPage );
 
   return (
     <div className="mt-6 flow-root">
